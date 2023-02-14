@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  countdown:
+    build: ./Dockerfile
+    container_name: countdown
+    restart: always
+    command: "sh /docker-entrypoint.sh" # Run the entrypoint script
+    volumes:
+      - ./src:/src
+      - ./src/docker-entrypoint.sh:/docker-entrypoint.sh
+    ports:
+      - 8000:80
