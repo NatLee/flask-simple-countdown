@@ -1,0 +1,22 @@
+{% block head %}
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+<link
+  rel="shortcut icon"
+  href="{{ url_for('static', filename='favicon.ico') }}"
+  type="image/x-icon"
+/>
+{% endblock %} {% block page_content %}
+<audio id="over_music">
+  <source src="{{ url_for('static', filename='beepbeep.mp3') }}" />
+</audio>
+
+<div class="timer">
+  <p id="time"></p>
+</div>
+
+{% endblock %} {% block scripts %}
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+{% endblock %}
