@@ -1,0 +1,67 @@
+body {
+    font-family: PingFangSC-Light,'helvetica neue','hiragino sans gb',tahoma,
+                     'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+}
+
+.time-input {
+  width: 120px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.alert-info {
+    background: #bddcfa;
+    display: block;
+    padding: 10px 40px;
+    text-align:center;
+    width: 40%;
+    margin: auto;
+}
+
+.timer {
+    height: 85%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: FranklinGothic, Verdana, Arial, sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+/* responsive media queries */
+
+@media (min-width: 280px) {
+    .timer {
+        font-size: 70px;
+    }
+    .alert-info {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    .timer {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 980px) {
+    .timer {
+        font-size: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .timer {
+        font-size: 150px;
+    }
+}
